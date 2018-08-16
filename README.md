@@ -1,1 +1,0 @@
-# sunbird_linux
