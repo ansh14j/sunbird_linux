@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="23.581" tests="189" errors="0" skipped="188" failures="1">
+<testsuite name="TestSuite" time="23.323" tests="189" errors="0" skipped="188" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="openApplication" classname="org.sunbird.testscripts.PublicUser_TC01_02" time="23.581">
+  <testcase name="openApplication" classname="org.sunbird.testscripts.PublicUser_TC01_02" time="23.323">
     <failure message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-32-generic&apos;, java.version: &apos;1.8.0_181&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-32-generic', java.version: '1.8.0_181'
@@ -119,7 +119,7 @@ Driver info: driver.version: ChromeDriver
     <system-out>I am in onStart method RegressionTests-P1
 </system-out>
     <system-err>/home/qualitrix/Documents/sunbird_linux/Drivers/chromedriver: error while loading shared libraries: libgconf-2.so.4: cannot open shared object file: No such file or directory
-Aug 15, 2018 11:27:40 PM org.openqa.selenium.os.OsProcess checkForError
+Aug 15, 2018 11:40:23 PM org.openqa.selenium.os.OsProcess checkForError
 SEVERE: org.apache.commons.exec.ExecuteException: Process exited with an error: 127 (Exit value: 127)
 </system-err>
   </testcase>

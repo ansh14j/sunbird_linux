@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 189, Failures: 1, Errors: 0, Skipped: 188, Time elapsed: 28.273 sec <<< FAILURE!
-openApplication(org.sunbird.testscripts.PublicUser_TC01_02)  Time elapsed: 23.581 sec  <<< FAILURE!
+Tests run: 189, Failures: 1, Errors: 0, Skipped: 188, Time elapsed: 26.765 sec <<< FAILURE!
+openApplication(org.sunbird.testscripts.PublicUser_TC01_02)  Time elapsed: 23.323 sec  <<< FAILURE!
 org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-32-generic', java.version: '1.8.0_181'
