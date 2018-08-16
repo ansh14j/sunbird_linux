@@ -23,7 +23,7 @@ public abstract class BaseTest implements IAutoConst {
 		ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
 		driver = new ChromeDriver(ChromeOptions);
 
-		driver = new ChromeDriver(); 
+		 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		//driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
