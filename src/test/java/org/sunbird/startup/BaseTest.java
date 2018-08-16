@@ -4,8 +4,11 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.*;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.*;
 
 public abstract class BaseTest implements IAutoConst {
 
@@ -16,12 +19,22 @@ public abstract class BaseTest implements IAutoConst {
 
 	}
 
+	@SuppressWarnings("deprecation")
 	@BeforeMethod
 	public void openApplication() throws IOException, InterruptedException 
 	{
-		ChromeOptions ChromeOptions = new ChromeOptions();
-		ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
-		driver = new ChromeDriver(ChromeOptions);
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+		capabilities.setCapability("chrome.binary", "<Path to binary>");
+		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+		capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+		capabilities.setCapability("applicationCacheEnabled", true);
+		capabilities.setCapability("browserConnectionEnabled", true);
+		capabilities.setCapability("databaseEnabled", true);
+		capabilities.setCapability("networkConnectionEnabled", true);
+		driver = new ChromeDriver(capabilities); 
 
 		 
 		driver.manage().window().maximize();
