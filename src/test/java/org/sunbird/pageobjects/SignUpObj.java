@@ -153,6 +153,9 @@ public class SignUpObj extends BaseTest
                 }
                 //orgUploadPage.clickLogin.click();
                 orgUploadPage.clickLogin1.click();
+		GenericFunctions.waitWebDriver(1500);
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
           }
           catch(Exception e)
           {
