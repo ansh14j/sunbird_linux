@@ -38,16 +38,15 @@ public abstract class BaseTest implements IAutoConst {
 		driver = new ChromeDriver(capabilities); */
 		
 		ChromeOptions options = new ChromeOptions();
-  		//options.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
-  		/*options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+  		options.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+  		options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
   		options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
   		options.setAcceptInsecureCerts(true);
   		options.setCapability("applicationCacheEnabled", "true");
   		options.setCapability("browserConnectionEnabled", "true");
   		options.setCapability("databaseEnabled", "true");
-  		options.setCapability("networkConnectionEnabled", "true");*/
-
-  		driver = new ChromeDriver();
+  		options.setCapability("networkConnectionEnabled", "true");
+  		driver = new ChromeDriver(options);
 		
 		
 		driver.manage().window().maximize();
