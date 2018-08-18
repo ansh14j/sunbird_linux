@@ -37,9 +37,9 @@ public abstract class BaseTest implements IAutoConst {
 		capabilities.setCapability("networkConnectionEnabled", "true");
 		driver = new ChromeDriver(capabilities); */
 		
-		ChromeOptions options = new ChromeOptions();
-		options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-  		options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+		//ChromeOptions options = new ChromeOptions();
+		//options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+  		//options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
   		//options.addArguments("--headless");
 		//options.addArguments("start-fullscreen");
 		//, "window-size=1024,768", "--no-sandbox");
@@ -49,7 +49,7 @@ public abstract class BaseTest implements IAutoConst {
   		options.setCapability("browserConnectionEnabled", "true");
   		options.setCapability("databaseEnabled", "true");
   		options.setCapability("networkConnectionEnabled", "true");*/
-  		driver = new ChromeDriver(options);
+  		driver = new ChromeDriver();
 		
 		
 		driver.manage().window().maximize();
