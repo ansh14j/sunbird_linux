@@ -16,7 +16,7 @@ public abstract class BaseTest implements IAutoConst {
 
 	}
 
-	@BeforeMethod
+	@BeforeTest
 	public void openApplication() throws IOException, InterruptedException 
 	{
 		/*ChromeOptions ChromeOptions = new ChromeOptions();
@@ -35,7 +35,7 @@ public abstract class BaseTest implements IAutoConst {
 		
 	}
 
-	@AfterMethod
+	@AfterTest
 	public void closeApplication() throws InterruptedException
 	{
 		
