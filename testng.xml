@@ -4,7 +4,7 @@
 <listeners>
 <listener class-name="org.sunbird.generic.TestListener"></listener>
 </listeners>
-  <test thread-count="5" name="RegressionTests-P1">
+  <test thread-count="1" name="RegressionTests-P1">
     <classes>
       <!-- Test cases for Admin role -->
       <class name="org.sunbird.testscripts.Admin_TC01"/>
