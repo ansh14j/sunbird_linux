@@ -20,9 +20,10 @@ public abstract class BaseTest implements IAutoConst {
 	public void openApplication() throws IOException, InterruptedException 
 	{
 		ChromeOptions ChromeOptions = new ChromeOptions();
-		ChromeOptions.addArguments("--headless", "--no-sandbox");
+		ChromeOptions.addArguments("--headless");
 		ChromeOptions.addArguments("--no-sandbox");
 		ChromeOptions.addArguments("--disable-dev-shm-usage");
+		ChromeOptions.addArguments("--start-maximized");
 		driver = new ChromeDriver(ChromeOptions);
 		
 //		driver = new ChromeDriver(); 
