@@ -16,7 +16,7 @@ public abstract class BaseTest implements IAutoConst {
 
 	}
 
-	@BeforeTest
+	@BeforeMethod(alwaysRun = true)
 	public void openApplication() throws IOException, InterruptedException 
 	{
 		/*ChromeOptions ChromeOptions = new ChromeOptions();
@@ -26,7 +26,7 @@ public abstract class BaseTest implements IAutoConst {
 		driver = new ChromeDriver(ChromeOptions);*/
 		
 		driver = new ChromeDriver(); 
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		//driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		//driver.get(AUTO_APP_URL);
@@ -35,12 +35,12 @@ public abstract class BaseTest implements IAutoConst {
 		
 	}
 
-	@AfterTest
+	@AfterMethod (alwaysRun = true)
 	public void closeApplication() throws InterruptedException
 	{
 		
 //		Thread.sleep(15000);
-		driver.manage().deleteAllCookies();
+//		driver.manage().deleteAllCookies();
 		driver.quit();
 		System.out.println("Test Execution Completed : Closing the browser");
 		
