@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="177288" started-at="2018-08-20T13:45:59Z" finished-at="2018-08-20T13:48:56Z">
+  <suite name="Default suite" duration-ms="87897" started-at="2018-08-21T06:55:43Z" finished-at="2018-08-21T06:57:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="177288" started-at="2018-08-20T13:45:59Z" finished-at="2018-08-20T13:48:56Z">
-      <class name="org.sunbird.testscripts.PublicUser_TC01_02">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:org.sunbird.testscripts.PublicUser_TC01_02@ef9296d]" name="openApplication" is-config="true" duration-ms="99511" started-at="2018-08-20T06:45:59Z" finished-at="2018-08-20T06:47:38Z">
+    <test name="Default test" duration-ms="87897" started-at="2018-08-21T06:55:43Z" finished-at="2018-08-21T06:57:11Z">
+      <class name="org.sunbird.testscripts.Admin_TC01">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:org.sunbird.testscripts.Admin_TC01@26653222]" name="openApplication" is-config="true" duration-ms="14872" started-at="2018-08-20T23:55:43Z" finished-at="2018-08-20T23:55:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="loginAndChangePasswordTestCase01_02()[pri:0, instance:org.sunbird.testscripts.PublicUser_TC01_02@ef9296d]" name="loginAndChangePasswordTestCase01_02" duration-ms="7285" started-at="2018-08-20T06:47:38Z" finished-at="2018-08-20T06:47:46Z">
+        <test-method status="PASS" signature="uploadRootOrgTestCase01()[pri:1, instance:org.sunbird.testscripts.Admin_TC01@26653222]" name="uploadRootOrgTestCase01" duration-ms="72510" started-at="2018-08-20T23:55:58Z" finished-at="2018-08-20T23:57:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAndChangePasswordTestCase01_02 -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:org.sunbird.testscripts.PublicUser_TC01_02@ef9296d]" name="closeApplication" is-config="true" duration-ms="70392" started-at="2018-08-20T06:47:46Z" finished-at="2018-08-20T06:48:56Z">
+        </test-method> <!-- uploadRootOrgTestCase01 -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:org.sunbird.testscripts.Admin_TC01@26653222]" name="closeApplication" is-config="true" duration-ms="407" started-at="2018-08-20T23:57:11Z" finished-at="2018-08-20T23:57:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- org.sunbird.testscripts.PublicUser_TC01_02 -->
+      </class> <!-- org.sunbird.testscripts.Admin_TC01 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

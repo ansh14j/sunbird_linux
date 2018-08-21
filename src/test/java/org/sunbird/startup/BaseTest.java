@@ -19,15 +19,15 @@ public abstract class BaseTest implements IAutoConst {
 	@BeforeMethod(alwaysRun = true)
 	public void openApplication() throws IOException, InterruptedException 
 	{
-		ChromeOptions ChromeOptions = new ChromeOptions();
+		/*ChromeOptions ChromeOptions = new ChromeOptions();
 		ChromeOptions.addArguments("--headless");
 		ChromeOptions.addArguments("--no-sandbox");
 		ChromeOptions.addArguments("--disable-dev-shm-usage");
 		ChromeOptions.addArguments("--start-maximized");
-		driver = new ChromeDriver(ChromeOptions);
+		driver = new ChromeDriver(ChromeOptions);*/
 		
-//		driver = new ChromeDriver(); 
-		//driver.manage().window().maximize();
+		driver = new ChromeDriver(); 
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		//driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		//driver.get(AUTO_APP_URL);
