@@ -15,7 +15,7 @@ pipeline {
             agent {
                 docker {
                     image 'selenium/hub:3.14.0-arsenic'
-                    args '-v /root/.m2:/root/.m2' 
+                    args '-p 4444:4444' 
 
                 }
             }
