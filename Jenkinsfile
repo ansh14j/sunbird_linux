@@ -3,7 +3,7 @@ pipeline {
         docker {
             image 'maven:3-alpine' 
             args '-v /root/.m2:/root/.m2'
-            image 'selenium/node-chrome' 
+            image 'selenium/node-chrome:3.14.0-arsenic' 
         }
     }
     stages {
