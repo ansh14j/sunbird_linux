@@ -14,7 +14,7 @@ pipeline {
         stage('Test') {
             agent {
                 docker {
-                    image 'sselenium/hub:3.14.0-arsenic'
+                    image 'selenium/hub:3.14.0-arsenic'
                 }
             }
             steps {
