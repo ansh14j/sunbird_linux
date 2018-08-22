@@ -14,7 +14,7 @@ pipeline {
         stage('Test') {
             agent {
                 docker {
-                    image 'selenium/node-chrome:3.14.0-arsenic'
+                    image 'selenium/node-chrome'
                 }
             }
             steps {
