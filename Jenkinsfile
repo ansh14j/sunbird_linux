@@ -14,7 +14,7 @@ pipeline {
         stage('Test') {
             agent {
                 docker {
-                    image 'selenium/node-chrome'
+                    sh docker pull selenium/node-chrome
                 }
             }
             steps {
