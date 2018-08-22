@@ -15,7 +15,6 @@ pipeline {
             agent {
                 docker {
                     image 'selenium/hub:3.14.0-arsenic'
-                    ports: - "4444:4444"
                 }
             }
             steps {
