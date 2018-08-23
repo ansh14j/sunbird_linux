@@ -22,6 +22,7 @@ sh          'chmod 755 /usr/bin/google-chrome'
         stage('Test') {
             
             steps {
+sh 'mvn test'
             }
             post {
                 always {
