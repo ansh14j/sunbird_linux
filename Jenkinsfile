@@ -9,7 +9,7 @@ pipeline {
         stage('Build') { 
             steps {
 
-sh          'apt-get update; apt-get install -y gettext-base;'
+sh          'apt update; apt install -y gettext-base;'
 sh          "echo {'deb http://dl.google.com/linux/chrome/deb/ stable main'} > /etc/apt/sources.list.d/chrome.list"
 sh          'wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
 sh          'set -x && apt-get update && apt-get install -y xvfb google-chrome-stable'
