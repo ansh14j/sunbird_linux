@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'mvn install && mvn -B verify' 
+                sh 'mvn -B verify' 
             }
         }
         stage('Test') {
