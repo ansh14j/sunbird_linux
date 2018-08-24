@@ -1,7 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'hello-world'
+            image 'markhobson/maven-chrome' 
+            args '-v /Users/anshul/.m2:/Users/anshul/.m2' 
         }
     }
     stages {
